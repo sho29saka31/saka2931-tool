@@ -34,7 +34,7 @@ npm run deploy  # Cloudflare Workers へデプロイ
 公開先は独自ドメイン `tool.saka2931.jp` のみです。`cloudflare.config.ts` で `workersDev: false`・`previewUrls: false` を指定しており、`*.workers.dev` の URL もプレビュー URL も作られません(Pages も使いません)。
 
 ```bash
-npx cf login      # 初回のみ(ブラウザで Cloudflare にログイン)
+npx cf auth login # 初回のみ(ブラウザで Cloudflare にログイン)
 npm run deploy    # ビルドして本番へデプロイ
 ```
 
