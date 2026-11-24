@@ -28,3 +28,14 @@ npm run deploy  # Cloudflare Workers へデプロイ
 ## SEO
 
 `app/lib/seo.ts` でページごとの title / description / canonical / OGP / Twitter カード / 構造化データ(JSON-LD)を生成します。`robots.txt`・`sitemap.xml`・アイコン・OGP 画像は `app/` 配下のファイルから自動生成されます。
+
+## デプロイ(Cloudflare Workers)
+
+公開先は独自ドメイン `tool.saka2931.jp` のみです。`cloudflare.config.ts` で `workersDev: false`・`previewUrls: false` を指定しており、`*.workers.dev` の URL もプレビュー URL も作られません(Pages も使いません)。
+
+```bash
+npx cf login      # 初回のみ(ブラウザで Cloudflare にログイン)
+npm run deploy    # ビルドして本番へデプロイ
+```
+
+前提: `saka2931.jp` が同じ Cloudflare アカウントのゾーンとして管理されていること(独自ドメインの DNS レコードと証明書は自動で作成されます)。
