@@ -1,5 +1,8 @@
 import Link from "next/link";
+import { pageMetadata } from "./lib/seo";
 import { tools } from "./tools";
+
+export const metadata = pageMetadata({ title: "ツール一覧", description: "登録不要・無料で使えるシンプルなWebツール集。入力内容はサーバーに送信されません。", path: "/" });
 
 export default function Home() {
   return (

@@ -12,4 +12,6 @@ export const tools: Tool[] = [
   { slug: "kana", name: "文字種変換", description: "全角半角・ひらがなカタカナ・大文字小文字の一括変換", icon: "" },
   { slug: "random", name: "ランダム抽選", description: "くじ引き・サイコロ・並び替えをランダムに実行", icon: "" },
   { slug: "calc", name: "割合・税計算", description: "消費税の税込・税抜、割引後の価格、割合(%)の計算", icon: "" },
+  { slug: "qrcode", name: "QRコード作成", description: "URLや文字列から QR コードを作成し、PNG 画像として保存", icon: "" },
+  { slug: "diff", name: "テキスト差分比較", description: "2つのテキストを行単位で比較し、追加・削除された行を色分け表示", icon: "" },
 ];

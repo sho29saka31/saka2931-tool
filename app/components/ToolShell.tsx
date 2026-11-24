@@ -1,10 +1,12 @@
 import Link from "next/link";
 import { tools } from "../tools";
+import { itemJsonLd } from "../lib/seo";
 
 export function ToolShell({ slug, children }: { slug: string; children: React.ReactNode }) {
   const t = tools.find((x) => x.slug === slug)!;
   return (
     <main className="mx-auto max-w-3xl px-6 py-16">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemJsonLd(t, "UtilitiesApplication")) }} />
       <Link href="/" className="text-sm text-gray-500 hover:text-gray-900">← ツール一覧</Link>
       <h1 className="mt-3 text-2xl font-bold text-gray-900">{t.name}</h1>
       <p className="mt-3 text-sm leading-relaxed text-gray-600">{t.description}</p>

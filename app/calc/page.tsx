@@ -1,8 +1,11 @@
-import type { Metadata } from "next";
 import { ToolShell } from "../components/ToolShell";
+import { tools } from "../tools";
+import { itemMetadata } from "../lib/seo";
 import Client from "./client";
 
-export const metadata: Metadata = { title: "割合・税計算" };
+const item = tools.find((i) => i.slug === "calc")!;
+export const metadata = itemMetadata(item);
+
 export default function Page() {
   return <ToolShell slug="calc"><Client /></ToolShell>;
 }
