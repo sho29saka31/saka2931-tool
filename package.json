@@ -31,5 +31,8 @@
     "build": "vite build",
     "start": "vite preview",
     "deploy": "vinext-cloudflare deploy"
+  },
+  "overrides": {
+    "fflate": "0.7.5"
   }
 }
