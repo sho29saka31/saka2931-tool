@@ -36,7 +36,7 @@ export default function Client() {
       </div>
       {rgb && hsl ? (
         <>
-          <div className="h-24 rounded-lg border border-slate-200" style={{ background: `rgb(${rgb.join(",")})` }} />
+          <div className="h-24 rounded-lg border border-gray-200" style={{ background: `rgb(${rgb.join(",")})` }} />
           <dl className="space-y-1 font-mono text-sm">
             <div>HEX: #{rgb.map((n) => n.toString(16).padStart(2, "0")).join("")}</div>
             <div>RGB: rgb({rgb.join(", ")})</div>

@@ -42,7 +42,7 @@ export default function Client() {
         <button className={btn} onClick={() => setRunning(!running)}>{running ? "一時停止" : "スタート"}</button>
         <button className={btnSub} onClick={reset}>リセット</button>
       </div>
-      <p className="mt-4 text-sm text-slate-500">完了したセット: {done}</p>
+      <p className="mt-4 text-sm text-gray-500">完了したセット: {done}</p>
     </div>
   );
 }

@@ -15,8 +15,8 @@ export default function Client() {
       <textarea className={`${input} h-56`} value={text} onChange={(e) => setText(e.target.value)} placeholder="ここにテキストを入力・貼り付け" />
       <dl className="mt-4 grid grid-cols-2 gap-3 sm:grid-cols-5">
         {stats.map(([k, v]) => (
-          <div key={k} className="rounded-lg bg-slate-100 p-3 text-center">
-            <dt className="text-xs text-slate-500">{k}</dt>
+          <div key={k} className="rounded-lg bg-gray-100 p-3 text-center">
+            <dt className="text-xs text-gray-500">{k}</dt>
             <dd className="text-lg font-bold">{v}</dd>
           </div>
         ))}
