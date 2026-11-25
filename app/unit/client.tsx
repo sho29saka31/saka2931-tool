@@ -32,7 +32,7 @@ export default function Client() {
     <div className="space-y-4">
       <div className="flex flex-wrap gap-2 text-sm">
         {CATS.map((c, i) => (
-          <button key={c.name} onClick={() => pick(i)} className={`rounded-lg border px-3 py-1 ${i === ci ? "border-gray-900 bg-gray-900 text-white" : "border-gray-300 bg-white text-gray-700 hover:bg-gray-50"}`}>{c.name}</button>
+          <button key={c.name} onClick={() => pick(i)} className={`rounded-md border px-3 py-1 ${i === ci ? "border-accent bg-accent text-white" : "border-gray-300 bg-white text-gray-700 hover:bg-gray-50"}`}>{c.name}</button>
         ))}
       </div>
       <div className="grid gap-2 sm:grid-cols-[1fr_auto_1fr] sm:items-center">

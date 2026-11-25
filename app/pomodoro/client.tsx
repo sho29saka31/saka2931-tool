@@ -29,7 +29,7 @@ export default function Client() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [running, mode]);
 
-  useEffect(() => { document.title = `${String(Math.floor(left / 60)).padStart(2, "0")}:${String(left % 60).padStart(2, "0")} | Saka Tools`; }, [left]);
+  useEffect(() => { document.title = `${String(Math.floor(left / 60)).padStart(2, "0")}:${String(left % 60).padStart(2, "0")} | tool`; }, [left]);
 
   const mm = String(Math.floor(left / 60)).padStart(2, "0");
   const ss = String(left % 60).padStart(2, "0");

@@ -32,7 +32,7 @@ export default function Client() {
           <button className={btn} onClick={draw} disabled={!items.length}>1つ選ぶ</button>
           <button className={btn} onClick={shuffle} disabled={!items.length}>並び替える</button>
         </div>
-        {picked && <pre className="whitespace-pre-wrap rounded-lg bg-gray-100 p-3 text-lg font-bold">{picked}</pre>}
+        {picked && <pre className="whitespace-pre-wrap rounded-md bg-gray-100 p-3 text-lg font-bold">{picked}</pre>}
       </section>
       <section className="space-y-2">
         <h2 className="font-semibold">サイコロ</h2>

@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 
 /** 本番の正規URL。canonical・sitemap・robots はすべてここを基準にする */
 export const BASE_URL = "https://tool.saka2931.jp";
-export const SITE_NAME = "Saka Tools";
+export const SITE_NAME = "tool";
 const OG_IMAGE = "/opengraph-image";
 
 /**

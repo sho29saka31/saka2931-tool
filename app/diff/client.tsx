@@ -42,7 +42,7 @@ export default function Client() {
       {tooBig ? <p className="text-sm text-red-600">行数が多すぎます(各 {LIMIT} 行まで)。</p> : (a || b) && (
         <>
           <p className="text-sm text-gray-600">追加 <b className="text-green-700">{add}</b> 行 / 削除 <b className="text-red-700">{del}</b> 行</p>
-          <pre className="overflow-x-auto rounded-lg border border-gray-200 bg-white p-2 text-sm">
+          <pre className="overflow-x-auto rounded-md border border-gray-200 bg-white p-2 text-sm">
             {ops.map((o, i) => <div key={i} className={`whitespace-pre-wrap px-2 ${STYLE[o.t]}`}>{MARK[o.t]}{o.line}</div>)}
           </pre>
         </>

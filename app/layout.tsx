@@ -10,7 +10,7 @@ const GTM_CONTAINER_ID = process.env.NEXT_PUBLIC_GTM_CONTAINER_ID;
 export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
   title: { default: `${SITE_NAME} | saka2931.jp`, template: `%s | ${SITE_NAME}` },
-  description: "登録不要・無料で使えるWebツール集。文字数カウント、パスワード生成、カラー変換、QRコード作成、単位変換、JSON整形、日付計算などをブラウザですぐ使えます。入力内容はサーバーに送信されません。",
+  description: "文字数カウント、パスワード生成、QRコード作成、単位変換、JSON整形など、日常の作業に使う小さなツール集。入力した内容は、お使いのブラウザの中だけで処理されます。",
   keywords: ["無料ツール", "Webツール", "文字数カウント", "パスワード生成", "QRコード作成", "単位変換", "JSON整形", "日付計算"],
   applicationName: SITE_NAME,
   authors: [{ name: "Shoki" }],

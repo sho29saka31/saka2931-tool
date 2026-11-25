@@ -12,7 +12,7 @@ export function SiteHeader() {
             運営者情報
           </a>
           <a href="https://game.saka2931.jp" className="hover:text-gray-900">
-            ゲーム
+            game
           </a>
         </nav>
       </div>

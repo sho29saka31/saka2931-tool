@@ -40,8 +40,8 @@ export default function Client() {
       {url && (
         <div className="space-y-3">
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src={url} alt="生成された QR コード" width={Math.min(size, 320)} height={Math.min(size, 320)} className="rounded-lg border border-gray-200" />
-          <div><a href={url} download="qrcode.png" className="inline-block rounded-lg bg-gray-900 px-4 py-2 text-sm font-medium text-white hover:bg-gray-700">PNG で保存</a></div>
+          <img src={url} alt="生成された QR コード" width={Math.min(size, 320)} height={Math.min(size, 320)} className="rounded-md border border-gray-200" />
+          <div><a href={url} download="qrcode.png" className="inline-block rounded-md bg-accent px-4 py-2 text-sm font-medium text-white hover:bg-accent/90">PNG で保存</a></div>
         </div>
       )}
     </div>
