@@ -3,7 +3,7 @@ import { bindings, defineConfig, defineWorker } from "cf/config";
 export default defineConfig({
   worker: defineWorker({
     name: "saka2931-tool",
-    entrypoint: "vinext/server/fetch-handler",
+    entrypoint: "./worker.ts",
     compatibilityDate: "2026-11-24",
     compatibilityFlags: ["nodejs_compat"],
     // 独自ドメインのみで公開する。workers.dev とプレビューURLは無効にする。
