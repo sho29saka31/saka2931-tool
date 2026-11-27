@@ -39,7 +39,7 @@ function viewerOk(request: Request, env: { MAINTENANCE_VIEWER_CODE?: string }): 
 export default {
   async fetch(request: Request, env: { MAINTENANCE_VIEWER_CODE?: string }, ctx: unknown) {
     const { pathname } = new URL(request.url);
-    const exempt = pathname === "/robots.txt" || pathname.startsWith("/_next/") || pathname === "/favicon.ico";
+    const exempt = pathname === "/robots.txt" || pathname === "/sitemap.xml" || pathname.startsWith("/_next/") || pathname === "/favicon.ico";
     if (!exempt) {
       const v = viewerOk(request, env);
       if (v.redirect) return v.redirect;
