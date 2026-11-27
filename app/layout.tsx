@@ -27,6 +27,11 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
   return (
     <html lang="ja">
       <body className="flex min-h-screen flex-col antialiased">
+        <script
+          type="application/ld+json"
+          // 検索エンジン向けの構造化データ(WebSite)。内容は固定値のみ
+          dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "WebSite", name: SITE_NAME, url: BASE_URL, inLanguage: "ja" }) }}
+        />
         {GTM_CONTAINER_ID && (
           // Consent Mode v2 のデフォルト値(すべて拒否)を GTM 本体の読み込みより前に設定する。
           // GTM 本体は同意後に lib/consent.ts が読み込む。
