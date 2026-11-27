@@ -3,6 +3,7 @@ import "./globals.css";
 import { SiteHeader } from "./components/SiteHeader";
 import { SiteFooter } from "./components/SiteFooter";
 import CookieBanner from "./components/CookieBanner";
+import AgeNotice from "./components/AgeNotice";
 import { BASE_URL, SITE_NAME } from "./lib/seo";
 
 const GTM_CONTAINER_ID = process.env.NEXT_PUBLIC_GTM_CONTAINER_ID;
@@ -41,6 +42,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         <SiteHeader />
         <div className="flex-1">{children}</div>
         <SiteFooter />
+        <AgeNotice />
         <CookieBanner />
       </body>
     </html>
